@@ -1,0 +1,141 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+body>*{
+    padding:70px 150px ;
+    
+}
+#logo {
+    font-size: 24px;
+}
+
+#hero {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.header {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    align-items: center;
+}
+.header, .main, .main-p1 {
+    display: flex;
+}
+.header, .main-p1, .footer, .main-p4{
+    background-color: #1F2937;
+    color: #F9FAF8;
+    font-size: 18px;
+    justify-content: space-between;
+}
+
+.header ul {
+    display: flex;
+    gap:20px;
+    list-style: none;
+    color: #F9FAF8;
+}
+
+a{
+    text-decoration: none;
+    color: #F9FAF8;
+}
+
+.main-p1{
+    gap:15px
+}
+.main-p1>.left {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0; 
+    gap:5px;
+}
+.main-p1>.right {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: flex-start;
+}
+
+.main-p2 {
+    flex-direction: column;
+    align-items: center;
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
+    gap:10px;
+    text-align: center;
+}
+
+.infobox-p2 {
+    display: flex;
+    gap:15px;
+}
+.infobox-p2 div{
+    display: flex;
+    flex-direction: column;
+    font-size: 2vw;
+}
+
+.main-p3  {
+    flex-direction: column;
+    background-color: #E5E7EB;
+    color: #1F2937; 
+}
+
+.main-p3 .quote {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: light;
+    align-self: center;
+}
+
+.main-p3 .citation {
+    font-size: 24px;
+    font-weight: bold;
+    align-self:flex-end;
+}
+.main-p4  {
+    justify-content: space-around;
+    align-items: center;
+    background-color: #3882F6;
+    margin: 110px;
+    border-radius: 10px;
+    gap:20px;
+}
+.main-p4 .left {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-p4 .title{
+    font-size: 30px;
+    font-weight: bold;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+button {
+    background-color: #3882F6;
+    border-radius: 6px;
+    font-size: 18px;
+    padding: 5px 15px;
+    border-style: none;
+}
+.main-p4 button{
+    border-color: #E5E7EB;
+    border-style: solid;
+    font-size: 24px;
+}
+img{
+    object-fit: fill;
+}
+.main-p2 img {
+    object-fit:contain;
+    max-width: 100%;
+}
